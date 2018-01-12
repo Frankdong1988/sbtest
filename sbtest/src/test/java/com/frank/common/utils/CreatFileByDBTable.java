@@ -6,17 +6,15 @@ import java.io.IOException;
 import java.net.URL;
 
 public class CreatFileByDBTable {
+	/** 项目绝对路径 **/
+	private String projectAbsolutelyPath = "C:\\develop\\Tools\\git\\gitHubRepository\\sbtest\\sbtest";
+	private String projectPackagePath = "src\\main\\java\\com\\frank\\sbtest";
 	private String modelName = "";
 	private String dbName = "";
 	private String tableName = "";
-	private String filePath = "com.frank.common.utils";
-	private File file = null;
-	private Object filethis = this;
 	
 	
-	public static void main(String[] args) {
-		System.out.println(CreatFileByDBTable.class.getResource(""));
-	}
+	
 	
 	
 	/**
