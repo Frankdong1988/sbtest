@@ -13,5 +13,15 @@ public interface SystemDao {
 	 * 测试数据层
 	 */
 	List<Map> testMapper();
+	/**
+	 * 添加
+	 * @return
+	 */
+	Integer add();
+	/**
+	 * 修改
+	 * @return
+	 */
+	Integer update();
 
 }

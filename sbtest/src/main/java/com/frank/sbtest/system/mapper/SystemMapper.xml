@@ -5,4 +5,12 @@
 	<select id="testMapper" resultType="java.util.Map">
 		SELECT * FROM User
 	</select>
+	
+	<insert id="add">
+		INSERT INTO User(NAME,age) VALUES('haha',20)
+	</insert>
+	
+	<update id="update">
+		UPDATE User SET name='bbbb' WHERE age=10
+	</update>
 </mapper>

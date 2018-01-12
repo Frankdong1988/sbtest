@@ -24,6 +24,15 @@ public class SystemServiceImpl implements SystemService {
 	public void testMapper() {
 		List<Map> map = systemDao.testMapper();
 		logger.info("数据库查询结束："+JSONArray.fromObject(map).toString());
+		Integer change = systemDao.add();
+		logger.info("添加数据结果返回："+change);
+		/*int temp = 1;
+		if(temp == 1) {
+			throw new RuntimeException("测试事务异常");
+		}*/
+		Integer change2 = systemDao.update();
+		logger.info("修改数据结果返回："+change2);
+		
 	}
 
 }
